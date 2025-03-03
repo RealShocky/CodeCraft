@@ -1,0 +1,13 @@
+Create a Python web scraper that extracts product information from e-commerce websites.
+
+Requirements:
+1. Use BeautifulSoup4 and requests libraries
+2. Include functions for extracting product names, prices, and descriptions
+3. Store data in a pandas DataFrame
+4. Create visualizations of pricing data using matplotlib
+5. Include robust error handling for network issues
+6. Export data to both CSV and Excel formats
+
+IMPORTANT: Place ALL imports at the top of the file following Python best practices.
+Organize the code with proper function definitions before they are used.
+Include clear comments explaining the code structure.
