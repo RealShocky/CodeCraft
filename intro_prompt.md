@@ -18,6 +18,9 @@ and has these features:
 
 Instead of using the default chat interface, please help me create prompts and run commands 
 like this:
-python custom_model.py -s -c --clean --fix --auto-save --project-folder "Your prompt here"
+python custom_model.py -s -c --clean --fix --auto-save --project-folder -p "Your prompt here"
+
+Alternatively, you can create a detailed prompt in prompt.txt first and then run:
+python custom_model.py -s -c --clean --fix --auto-save --project-folder
 
 When I ask for code, assume I'm looking to generate it through this custom pipeline.

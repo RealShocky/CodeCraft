@@ -50,14 +50,21 @@ A powerful tool that turns natural language prompts into complete, well-organize
 
 ## Usage
 
-### Basic Usage
+### Terminal Usage (Direct Command Line)
+
+When you're running CodeCraft directly from the command line, you can use these approaches:
+
+#### Using command-line arguments:
 
 ```bash
-python custom_model.py
-```
-This will read a prompt from `prompt.txt` and send it to your model.
+# Using the -p flag for prompts (recommended)
+python custom_model.py -p "Create a Python calculator app" -s -c --clean --fix --auto-save --project-folder
 
-### Command Line Options
+# Reading from prompt.txt (default)
+python custom_model.py -s -c --clean --fix --auto-save --project-folder
+```
+
+#### Command-Line Options
 
 | Option | Short | Description |
 |--------|-------|-------------|
@@ -71,6 +78,20 @@ This will read a prompt from `prompt.txt` and send it to your model.
 | `--output` | `-o` | Save output to specified file |
 | `--auto-save` | | Automatically save code to a file with an appropriate name |
 | `--project-folder` | | Create a dedicated project folder for generated files with automatic requirements.txt generation |
+
+### AI Assistant Integration
+
+If you're working with AI assistants like Windsurf or similar chat interfaces:
+
+1. Share the `intro_prompt.md` with the assistant
+2. Use this format when requesting code:
+
+```
+Please use my custom LLM integration script (custom_model.py) for this. 
+Run: python custom_model.py -s -c --clean --fix --auto-save --project-folder -p "Your detailed prompt here"
+```
+
+This helps the assistant understand that they should use your custom tool rather than generating code directly.
 
 ### Full Command Reference
 
