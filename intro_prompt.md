@@ -1,4 +1,4 @@
-##This is your initial post to the IDE model to use our system
+##This is your initial post to the IDE model to use our system##
 
 I want to use my custom LLM integration script (custom_model.py) for our conversation. 
 This script connects to a local LM Studio API running at http://localhost:1234/v1/chat/completions
